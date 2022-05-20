@@ -16,9 +16,9 @@ Nos dirigimos al directorio "Documents" y creamos un nuevo directorio de nombre 
 ![](imagenes/imagen4.PNG)
 ![](imagenes/imagen5.PNG)
 Una vez creado ejecutamos el comando:
-docker run --rm -d -p 8080:80 --name web -v ~/Documents/nginx/site-content:/usr/share/nginx/html nginx
+docker run --rm -d -p 8080:80 --name web -v ~~/Documents/nginx/site-content:/usr/share/nginx/html nginx
 ![](imagenes/imagen6.PNG)
-Con este comando creamos un volumen que montará nuestro directorio con la ruta del html recién creado (~/Documents/nginx/site-content) en el contenedor que se está ejecutando (/usr/share/nginx/html nginx)
+Con este comando creamos un volumen que montará nuestro directorio con la ruta del html recién creado (~~/Documents/nginx/site-content) en el contenedor que se está ejecutando (/usr/share/nginx/html nginx)
 Una vez hecho esto el localhost mostrará nuestro html:
 ![](imagenes/imagen7.PNG)
 ## Crear una imagen personalizada
